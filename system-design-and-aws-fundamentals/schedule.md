@@ -15,8 +15,8 @@
 - [ ] Research common architectural patterns
 - [ ] Understand message queues and event-driven architecture
 - [ ] Learning Activites
-    - [ ] Study theory (read chapters in "System Design Interview" or online resources)
-     - [ ] Watch YouTube tutorials or courses (e.g., Gaurav Sen’s System Design Series)
+    - [ ] Study theory (read chapters in "[System Design Interview](https://github.com/shams-imran/books/blob/master/System%20Design/system-design-interview-an-insiders-guidepdf_compress.pdf)" or online resources)
+     - [ ] Watch YouTube tutorials or courses (e.g., [Gaurav Sen’s System Design Series](https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX))
 - [ ] Hands-on
      - [ ] Draw simple system diagrams and justify design choices (e.g., designing a URL shortener, a messaging system)
 
@@ -30,7 +30,7 @@
      - [ ] Sharding
      - [ ] Partitioning
 - [ ] Learning Activites
-     -  [ ] Read "Designing Data-Intensive Applications" by Martin Kleppmann (focus on chapters on consistency and data modeling)
+     -  [ ] Read "[Designing Data-Intensive Applications](https://github.com/NirmalSilwal/system-design-resources/blob/master/Books/Designing%20Data%20Intensive%20Applications%20-%20Martin%20Kleppmann.pdf)" by Martin Kleppmann (focus on chapters on consistency and data modeling)
      -  [ ] Case studies: study systems like Netflix, Amazon, etc.
 - [ ] Hands-on
      - [ ] Design a large-scale distributed system, e.g., designing an e-commerce platform with millions of users.
@@ -83,7 +83,7 @@
 - [ ] Study Kubernetes basics and orchestration
 - [ ] Understand distributed system challenges
 - [ ] Learning Activities
-    - [ ] Read "Building Microservices" by Sam Newman (Chapters on design principles).
+    - [ ] Read "[Building Microservices](https://github.com/themockingjester/Books/blob/master/Building%20Microservices%2C%202nd%20Edition.pdf)" by Sam Newman (Chapters on design principles).
      - [ ] Watch introductory tutorials on microservices architecture.
      - [ ] Study Kubernetes fundamentals and microservices orchestration.
 - [ ] Hands-on: Set up Docker containers for microservices and deploy using Docker Compose.

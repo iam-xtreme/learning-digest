@@ -1,15 +1,15 @@
 ### 1. **Focus on System Design**
    - **Study Core Principles**: Review and understand basic principles of system design, such as 
-    1. scalability, reliability, and availability
-    2. fault tolerance, high availability, load balancing, caching, database sharding, message queues
-    3. concepts like consistency models (CAP theorem) and ACID.
+        1. scalability, reliability, and availability
+        2. fault tolerance, high availability, load balancing, caching, database sharding, message queues
+        3. concepts like consistency models (CAP theorem) and ACID.
    - **Practice Designing Systems**: Regularly practice designing systems and architectural components (e.g., designing a URL shortener, messaging system, file storage system or social media feeds). Focus on trade-offs, and justify your choices.
    - **Learn from Real-World Examples**: Study case studies of large-scale systems like Amazon, Netflix, or Uber, and analyze how they handle challenges such as traffic spikes, failover, and data consistency.
    - **Use Design Tools**: Use tools like **Lucidchart** or **Draw.io** to draw your system diagrams. Practice explaining them clearly.
    - **Books and Resources**:
-     - "Designing Data-Intensive Applications" by Martin Kleppmann
-     - "System Design Interview" by Alex Xu
-     - "Building Microservices" by Sam Newman (This can also help with microservices knowledge)
+     - "[Designing Data-Intensive Applications](https://github.com/NirmalSilwal/system-design-resources/blob/master/Books/Designing%20Data%20Intensive%20Applications%20-%20Martin%20Kleppmann.pdf)" by Martin Kleppmann
+     - "[System Design Interview](https://github.com/shams-imran/books/blob/master/System%20Design/system-design-interview-an-insiders-guidepdf_compress.pdf)" by Alex Xu
+     - "[Building Microservices](https://github.com/themockingjester/Books/blob/master/Building%20Microservices%2C%202nd%20Edition.pdf)" by Sam Newman (This can also help with microservices knowledge)
 
 ### 2. **Strengthen Basics in Computer Science**
    - **Deepen Core Knowledge**: Refresh fundamental concepts in algorithms, data structures, networking, databases, concurrency, etc.
