@@ -1,6 +1,6 @@
 # HashMap Vs TreeMap
 
-Certainly! Both `HashMap` and `TreeMap` are key-value data structures in Java that implement the `Map` interface. However, they have distinct differences in terms of ordering, performance, and use cases. Here's a detailed comparison:
+Both `HashMap` and `TreeMap` are key-value data structures in Java that implement the `Map` interface. However, they have distinct differences in terms of ordering, performance, and use cases. Here's a detailed comparison:
 
 ***
 
