@@ -25,6 +25,26 @@ In order to have pesistent store of the data of the system, choice of data store
      - Only need to serialization and deserialization data (JSON, XML, YAML, etc.).
      - Need to store a massive amount of data.
 
+#### Choosing between Managed SQL vs Distributed SQL Databases
+
+Choose managed Managed SQL (e.g.,PostgreSQL via AWS RDS or Aurora) for simpler workloads with moderate scale, complex SQL queries, and low-latency needs where vertical scaling or read replicas suffice, prioritizing operational ease over extreme distribution. Opt for distributed SQL databases (e.g., CockroachDB, YugabyteDB) when requiring horizontal scalability for massive data growth, global distribution, or high resilience without single points of failure, especially in geo-replicated government systems.
+
+**Managed SQL Use Cases**
+Ideal for single-region apps with predictable loads, leveraging primary-replica setups for high availability (99.99% uptime via Multi-AZ) and full PostgreSQL feature parity like advanced indexing or JSON support, but limited by manual sharding needs and write bottlenecks at high throughput. Best when team prefers managed backups, patching, and monitoring without distributed complexity; suits document metadata storage in gov collaboration where queries stay local.
+
+**Distributed SQL Use Cases**
+Select for write-heavy, multi-region scenarios demanding automatic sharding, linear scaling (add nodes for storage/throughput), and fault tolerance (no failover downtime via Raft consensus), trading minor latency for availability in CAP's AP model. Excels in gov apps with compliance-driven data locality or 10k+ concurrent users, supporting SQL compatibility while distributing tables across nodes.
+
+**Comparison Table**
+
+| Aspect              | Managed SQL                  | Distributed SQL                     |
+|---------------------|-------------------------------------|-------------------------------------|
+| Scalability        | Vertical + read replicas   | Horizontal (auto-sharding)  |
+| Availability       | Multi-AZ failover (~60s)   | No-downtime resilience      |
+| Latency            | Lower (single-node)        | Higher (network hops)      |
+| Complexity         | Low ops overhead         | Higher but automated      |
+| Best For           | Complex queries, moderate scale  | Global, high-write loads  |
+
 ---
 
 ## Step 2 - Making the System Available & Reliable
