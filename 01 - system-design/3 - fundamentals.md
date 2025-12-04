@@ -123,11 +123,19 @@ Vertical scaling (also known as **scaling up**) involves upgrading the resources
 
 ### Load Balancing 
 A load balancer evenly distributes incoming traffic among web servers that are defined in a load-balanced set.
-           **Web Server 1**
-           **||**
-**Client <=DNS=> Load Balancer**
-           **||**
-           **Web Server 2**
+```
+                         ---------------- 
+                         | Web Server 1 |
+                         ----------------
+                               |
+---------    -------   -----------------
+| Client |---| DNS |---| Load Balancer |
+---------    -------   -----------------
+                               |
+                         ---------------- 
+                         | Web Server 1 |
+                         ----------------
+```
 
  - Client interacts with public IP address of Load balancer while the web servers are inaccessible directly due to private IP address
  - Load Balancer(LB) intelligently routes the request to available web servers through an effecient algorithm
